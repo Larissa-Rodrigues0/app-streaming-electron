@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -27,34 +27,34 @@
         </div>
         
         <nav class="nav-menu">
-            <a href="#" class="nav-item active">
+            <a href="#" class="nav-item active" data-view="home">
                 <i class="ph ph-house"></i>
                 <span>Início</span>
             </a>
-            <a href="#" class="nav-item">
+            <a href="#" class="nav-item" data-view="search">
                 <i class="ph ph-magnifying-glass"></i>
                 <span>Buscar</span>
             </a>
-            <a href="#" class="nav-item">
+            <a href="#" class="nav-item" data-view="series">
                 <i class="ph ph-film-strip"></i>
                 <span>Séries</span>
             </a>
-            <a href="#" class="nav-item">
+            <a href="#" class="nav-item" data-view="animes">
                 <i class="ph ph-monitor-play"></i>
                 <span>Animes</span>
             </a>
-            <a href="#" class="nav-item">
+            <a href="#" class="nav-item" data-view="mylist">
                 <i class="ph ph-bookmark-simple"></i>
                 <span>Minha Lista</span>
             </a>
         </nav>
 
         <div class="nav-menu bottom-menu">
-            <a href="#" class="nav-item">
+            <a href="#" class="nav-item" data-view="settings">
                 <i class="ph ph-gear"></i>
                 <span>Configurações</span>
             </a>
-            <div class="nav-item user-profile">
+            <div class="nav-item user-profile" data-view="profile">
                 <img src="https://i.pravatar.cc/150?img=11" alt="Perfil">
                 <span>Meu Perfil</span>
             </div>
@@ -63,39 +63,14 @@
 
     <!-- Área Principal de Conteúdo -->
     <main class="main-content">
-        <!-- Hero Section (Destaque Principal) -->
-        <header class="hero" id="hero-section">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <div class="hero-tags">
-                    <span class="match">98% Relevante</span>
-                    <span class="year">2024</span>
-                    <span class="seasons">2 Temporadas</span>
-                    <span class="quality">4K Ultra HD</span>
-                </div>
-                <h1 class="hero-title">KAIJU NO. 8</h1>
-                <p class="hero-description">
-                    Em um mundo infestado por criaturas chamadas Kaiju, Kafka Hibino sempre sonhou em entrar para a Força de Defesa para combatê-los. Após um encontro inesperado, ele ganha a habilidade de se transformar em um Kaiju.
-                </p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary">
-                        <i class="ph-fill ph-play"></i>
-                        Assistir Agora
-                    </button>
-                    <button class="btn btn-secondary">
-                        <i class="ph ph-info"></i>
-                        Mais Informações
-                    </button>
-                </div>
-            </div>
-        </header>
-
-        <!-- Container dinâmico para as categorias de obras -->
-        <div id="categories-container">
-            <!-- As seções de carrossel serão inseridas aqui via JavaScript -->
+        <!-- Roteador Dinâmico -->
+        <div id="app-view" class="fade-in">
+            <!-- O conteúdo será injetado pelo app.js -->
         </div>
-
     </main>
+
+    <!-- Sistema de Notificações (Toast) -->
+    <div id="toast-container"></div>
 
     <!-- JavaScript -->
     <script src="./scripts/app.js"></script>

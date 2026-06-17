@@ -1,0 +1,3 @@
+VocÊ é um desing UI/UX expert e desenvolvedor full stack. Irei fornecer algumas imagens de referencia/inspiração para seguir. O seu trabalho é analisar essas imagens profundamento e criar o planejamento de um aplicativo desktop utilizando as tecnologias HTML, CSS e JAVASCRIPT.
+Antes de ir para o codigo, devemos ter um plano de ação bem definido.
+(+imagens)
